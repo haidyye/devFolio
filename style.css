@@ -1,13 +1,90 @@
-.hedr{
-    background-image: url(imgs/hero-bg.jpg);
-    height: 100vh;
-    background-position:center center;
+.header{
+    background-image: url(../imgs/hero-bg.jpg);
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
-.hero-title{
-    color: #fff;
-    font-weight: 600;
-    font-size: 3rem;
+nav{
+    z-index: 99999;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+}
+.navbar-brand a{
+    font-weight: 100;;
+}
+
+.nav-item a{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bgLayer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(71, 68, 68, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.bgLayer-caption h2{
+    font-weight: bold;
+ font-size: 45px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.bgLayer-caption p{
+    font-size: 34px;
+    text-align: center;
+    font-family: monospace;
+}
+#demo::after{
+    content: "|";
+    animation-name: typingSection;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes typingSection {
+    0% { content: "|";}
+    2% { content: "D|";}
+    4% { content: "De|";}
+    6% { content: "Des|";}
+    8% { content: "Desi|";}
+    10% { content: "Desig|";}
+    12% {content: "Design|";}
+    14% {content: "Designe|";}
+    16% {content: "Designer|";}
+    30% {content: "Designe|";}
+    32% {content: "Design|";}
+    34% {content: "Desig|";}
+    36% {content: "Desi|";}
+    38% {content: "Des|";}
+    40% {content: "De|";}
+    42% {content: "D|";}
+    44% {content: "|";}
+    46% {content: "|";}
+    48% {content: "D|";}
+    50% {content: "De|";}
+    52% {content: "Dev|";}
+    54% {content: "Deve|";}
+    56% {content: "Devel|";}
+    58% {content: "Develo|";}
+    60% {content: "Develop|";}
+    62% {content: "Develope|";}
+    64% {content: "Developer|";}
+    66% {content: "Develope|";}
+    68% {content: "Develop|";}
+    70% {content: "Develo|";}
+    72% {content: "Devel|";}
+    74% {content: "Deve|";}
+    76% {content: "Dev|";}
+    78% {content: "De|";}
+    80% {content: "D|";}
+    82% {content: "|";}
 }
 .nam h4{
     font-weight: lighter;
