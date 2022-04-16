@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .header{
     background-image: url(../imgs/hero-bg.jpg);
     background-position: center;
@@ -192,19 +195,19 @@ nav{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 100vh;
 }
 .footer1{
     background-color: rgba(29, 29, 131, 0.562);
-    height: 500px;
+    height: 100vh;
 }
 .get i{
     font-size: 20px;
 }
-.get:hover i{
-    background-color: darkblue;
-    color: darkgoldenrod;
+#icons:hover{
+    background-color: rgb(185, 178, 178);
     border-color: darkgray;
+    color: white;
 }
 .get{
     position: relative;
@@ -222,5 +225,16 @@ nav{
 @media only screen and (max-width: 991px) {
     .navvo{
      font-size: 20px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .bgLayer-caption{
+        padding: 10px;
+    }
+    .footer{
+        height: 100vh;
+    }
+    .footer1{
+      margin: 20px;
     }
 }
